@@ -43,6 +43,23 @@ test_that("idx nesnesinin tipi (class'ı) integer'dir", {
   expect_equal(class(idx), "integer")
 })
 
+test_that("Year adlı sütün numeric değerlerden oluşmalıdır", {
+  expect_true(all(is.numeric(maps$Year)))
+})
+
+
+test_that("Longitude adlı sütunun 3., 9. ve 10. elementleri negatif numeric değerler içermelidir", {
+  expect_true(all(maps$Longitude[c(3, 9, 10)] < 0))
+})
+
+test_that("finalResult adlı değişken vardır, bir data.frame'dir, 3 sütundan oluşmalıdır ve sütun isimleri sırasıyla Longitude, Latitude ve Year olmalıdır", {
+  expect_true(exists("finalResult", envir = .GlobalEnv))
+  expect_is(finalResult, "data.frame")
+  expect_equal(ncol(finalResult), 3)
+  expect_equal(names(finalResult), c("Longitude", "Latitude", "Year"))
+})
+
+
 
 
 

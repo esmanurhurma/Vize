@@ -29,6 +29,8 @@ hist(maps$Year, breaks = 10)
 #Soru 1.9
 maps$Longitude[idx] <- maps$Longitude[idx] * -1
 
+#Soru 1.10
+finalResult <- data.frame(Longitude = maps$Longitude, Latitude = maps$Latitude, Year=maps$Year)
 
 
 
