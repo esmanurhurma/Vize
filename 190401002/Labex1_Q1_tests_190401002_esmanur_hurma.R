@@ -23,3 +23,8 @@ test_that("maps nesnesi bir data.frame'dir", {
   expect_is(maps, "data.frame")
 })
 
+test_that("maps adlı data.frame'in ilk sütunun adı 'City' olmalıdır", {
+  expect_equal(names(maps)[1], "City")
+})
+
+

@@ -9,3 +9,6 @@ maps <- read.csv("~/MapsThatChangedOurWorld_StoryMap_Data.csv",sep=";")
 #Soru 1.3
 maps$Latitude <- sub(" N", "", maps$Latitude)
 
+#Soru 1.4
+idx <- grep("W", maps$Longitude)
+
