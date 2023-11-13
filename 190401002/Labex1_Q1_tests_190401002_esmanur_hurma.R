@@ -18,3 +18,8 @@ test_that("maps adlı değişken Global Workspace'de mevcuttur", {
   expect_true(exists("maps", envir = .GlobalEnv))
 })
 
+
+test_that("maps nesnesi bir data.frame'dir", {
+  expect_is(maps, "data.frame")
+})
+
