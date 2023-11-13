@@ -12,3 +12,6 @@ maps$Latitude <- sub(" N", "", maps$Latitude)
 #Soru 1.4
 idx <- grep("W", maps$Longitude)
 
+#Soru 1.5
+maps$Longitude <- gsub("[EW ]", "", maps$Longitude)
+

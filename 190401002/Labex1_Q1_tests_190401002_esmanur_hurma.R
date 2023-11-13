@@ -27,4 +27,8 @@ test_that("maps adlı data.frame'in ilk sütunun adı 'City' olmalıdır", {
   expect_equal(names(maps)[1], "City")
 })
 
+test_that("maps adlı data.frame'in 5. sütunun adında 'Title' kelimesi geçmelidir", {
+  expect_true(any(grepl("Title", names(maps)[5], ignore.case = TRUE)))
+})
+
 
