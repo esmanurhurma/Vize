@@ -26,6 +26,9 @@ maps$Year <- as.numeric(as.character(maps$Year))
 #Soru 1.8
 hist(maps$Year, breaks = 10)
 
+#Soru 1.9
+maps$Longitude[idx] <- maps$Longitude[idx] * -1
+
 
 
 

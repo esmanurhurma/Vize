@@ -39,6 +39,10 @@ test_that("idx nesnesi Global Workspace'de mevcuttur", {
   expect_true(exists("idx", envir = .GlobalEnv))
 })
 
+test_that("idx nesnesinin tipi (class'ı) integer'dir", {
+  expect_equal(class(idx), "integer")
+})
+
 
 
 
