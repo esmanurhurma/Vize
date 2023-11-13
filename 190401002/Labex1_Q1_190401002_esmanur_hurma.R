@@ -15,3 +15,7 @@ idx <- grep("W", maps$Longitude)
 #Soru 1.5
 maps$Longitude <- gsub("[EW ]", "", maps$Longitude)
 
+#Soru 1.6
+maps$Year <- sub(" AD","",maps$Year)
+
+

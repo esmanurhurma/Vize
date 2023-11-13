@@ -32,3 +32,5 @@ test_that("maps adlı data.frame'in 5. sütunun adında 'Title' kelimesi geçmel
 })
 
 
+
+
