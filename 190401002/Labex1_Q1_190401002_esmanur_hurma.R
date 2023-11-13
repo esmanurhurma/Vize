@@ -23,5 +23,9 @@ maps$Latitude <- as.numeric(as.character(maps$Latitude))
 maps$Longitude <- as.numeric(as.character(maps$Longitude))
 maps$Year <- as.numeric(as.character(maps$Year))
 
+#Soru 1.8
+hist(maps$Year, breaks = 10)
+
+
 
 

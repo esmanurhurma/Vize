@@ -35,6 +35,10 @@ test_that("Longitude adlı sütün numeric değerlerden oluşmalıdır", {
   expect_true(all(is.numeric(maps$Longitude)))
 })
 
+test_that("idx nesnesi Global Workspace'de mevcuttur", {
+  expect_true(exists("idx", envir = .GlobalEnv))
+})
+
 
 
 
