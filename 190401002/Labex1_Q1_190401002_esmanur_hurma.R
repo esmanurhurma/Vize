@@ -3,3 +3,5 @@ url <- "https://raw.githubusercontent.com/scizmeli/Red/master/MapsThatChangedOur
 destfile <- "~/MapsThatChangedOurWorld_StoryMap_Data.csv"
 
 download.file(url,destfile)
+
+maps <- read.csv("~/MapsThatChangedOurWorld_StoryMap_Data.csv",sep=";")
