@@ -31,6 +31,11 @@ test_that("maps adlı data.frame'in 5. sütunun adında 'Title' kelimesi geçmel
   expect_true(any(grepl("Title", names(maps)[5], ignore.case = TRUE)))
 })
 
+test_that("Longitude adlı sütün numeric değerlerden oluşmalıdır", {
+  expect_true(all(is.numeric(maps$Longitude)))
+})
+
+
 
 
 
